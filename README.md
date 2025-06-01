@@ -13,7 +13,13 @@ Achieved 97–99% accuracy using fine-tuned transfer learning with TensorFlow.
 Predicts yield based on features like:
 State, District, Crop, Crop_Year, Season, Area, Production.
 
-Model: CatBoost Regressor, fine-tuned using:
+MODELS:
+
+STABiLSTM-BiLSTM: A stacked attention-based BiLSTM followed by BiLSTM layers to capture both spatial and temporal dependencies in tabular crop data.
+
+STABiLSTM-GRU: Similar architecture replacing the second BiLSTM with GRU layers for better efficiency on longer sequences.
+
+CatBoost Regressor, fine-tuned using:
 
 Bayesian Optimization (Hyperopt, Optuna)
 
